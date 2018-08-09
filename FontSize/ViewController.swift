@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         fontSizeLabel.text = String(format: "%.2f", fontSize)
         //指定字體大小 & Float 變 CGFloat
         showTextField.font = font.withSize(CGFloat(fontSize))
+        fontLenghLabel.text = String(showTextField.text!.count)
 
     }
     @IBAction func entryTextField(_ sender: UITextField) {
